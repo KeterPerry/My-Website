@@ -1,0 +1,22 @@
+.ham-navbar{
+  width: 7vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap:10rem;
+  position:fixed;
+  transition: all 0.5s;
+}
+
+.icon{
+  color: white;
+  width:3rem;
+  height:2rem;
+  align-self: center;
+}
+.nav li{
+  width:100%;
+  display: flex;
+  gap:1rem
+}

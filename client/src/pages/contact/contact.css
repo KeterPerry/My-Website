@@ -1,0 +1,50 @@
+
+.Contact-container{
+    width: 100vw;
+    height:100vh;
+    background-image: linear-gradient(rgba(138, 138, 109, 0.825), rgba(139, 139, 117, 0.573), rgba(221, 221, 211, 0.573));
+    position: relative;
+    z-index:0;
+    padding-left: 5rem;
+    /* margin-left: 15vw; */
+} 
+
+.Contact-container::after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top:0;
+    left: 0;
+border-style: solid;
+border-width: 662px 1250px 0 0;
+
+border-color: rgba(161, 161, 105, 0.825) transparent transparent transparent;
+z-index: -1;
+}
+
+.contact-info{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    font-size:2rem;
+    padding-left: 18vw ;
+
+} 
+.download-btn{
+    width: max-content;
+    height: max-content;
+    padding: 1rem 1rem;
+    background-color:rgba(109, 95, 19, 0.786);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    cursor: pointer;
+}
+.download-btn:hover{
+   background-color:rgba(183, 160, 34, 0.786);
+   background-color:rgba(255, 217, 0, 0.362);
+}
+.cv-upload{
+  padding-top:10rem;
+  padding-left: 20vw ;
+}

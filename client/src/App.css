@@ -1,0 +1,12 @@
+.App{
+  display:flex;
+  flex-direction: column;
+}
+.App-inner{
+  display:flex;
+}
+
+/* #title{
+  font-weight: bold;
+  background-color: red;
+} */

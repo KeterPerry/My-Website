@@ -1,0 +1,9 @@
+.home{
+    width: 85vw;
+    height:100vh;
+    /* background-image: url("https://shopify-customerio.s3.amazonaws.com/tools/image_attachment/image/custom_resized_3d25791d-f9e9-407c-b873-7130a1a01478.jpg"); */
+    background-image: url("https://shopify-customerio.s3.amazonaws.com/tools/image_attachment/image/custom_resized_33cd783d-14c3-455b-a2e4-993d4f3fa90d.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

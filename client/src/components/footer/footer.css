@@ -1,0 +1,40 @@
+.footer{
+    width:100%;
+    height:10vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-around; */
+    font-size:1.5rem;
+    font-weight:bold;
+    gap: 15rem;
+
+}
+.footer div{
+/* width:33%; */
+color: #a0a0a0;
+
+
+}
+.footer-icons-wrapper{
+   
+    cursor: pointer;
+    display: flex;
+    gap:1.5rem; 
+}
+.icons{
+    width:2.5rem;
+    height:2.5rem;  
+}
+.copy-right{
+    width:1.5rem;
+    height:1.5rem;
+    margin-top:0.5rem;
+}
+
+.copy-right-container{
+    display:flex;
+    gap: 1.5rem;
+width:max-content;
+}
