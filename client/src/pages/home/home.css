@@ -1,3 +1,5 @@
+
+
 .home{
     width: 100%;
     height:100vh;
@@ -5,6 +7,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 0;
     position: relative;
     /* margin-left: 5rem; */
 }
@@ -17,9 +20,9 @@
     height:100vh;
     background-color: rgba(0, 0, 0, 0.704);
     opacity: 0.5;
-    /* z-index: -1; */
+    z-index: 1;
 }
-.home::before{
+/* .home::before{
     position: absolute;
     content: "I design and develop experiences that make people's lives simple";
     font-size: 3rem;
@@ -33,14 +36,14 @@
     left: 56rem;
     opacity: 0.8;
     animation: type 10s steps(40,end) forwards;
-}
+} */
 
 .introduction-container{
     width:max-content;
     height:max-content;
-    padding-left: 25rem;
-    padding-top: 20rem;
-    z-index: 1;
+    padding-left: 16rem;
+    padding-top: 24rem;
+    z-index: 2;
    
 
 }
@@ -49,7 +52,7 @@
     
     
         color: black;
-        color: rgb(96, 85, 24);
+        color: var(--main-color);
         font-family: 'Fira Code', monospace;
         font-weight: bold;
         font-size: 2.5rem;
@@ -60,40 +63,80 @@
 
 .introduction-container h1:nth-child(1) {
     margin: 0 20 0 0;
-    width: 170px;
-    animation: type 2s steps(40,end) forwards;
-  }
+    width: 200px;
+    animation: type 3s steps(40,end) forwards;
+  } 
 
   .introduction-container h1:nth-child(2) {
     opacity: 0.8;
+    opacity: 0;
     font-family: "Work Sans", sans-serif;
-    /* margin: 0 auto auto auto; */
-    background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
     font-weight: 800;
     font-size: 60px;  
-    width: max-content;
+    width: 210px;
     padding-left:2rem;
     padding-right:2rem;
     overflow: hidden;
-    animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
-    z-index: 3;
-  }
+    /* animation: shring-animation 3s steps(40,end) 3s forwards, blink .5s step-end infinite alternate; */
+    animation: type3 2s steps(40,end) 3s forwards;
+ 
+  } 
 
   .introduction-container h1:nth-child(3) {
     margin: 10px 0 0 0;
-    width: 220px;
-    animation: type 3s steps(40,end) 4s forwards;
+    width: 290px;
+    opacity: 0;
+    animation: type3 3s steps(40,end) 5s forwards;
+  
   }
   .introduction-container h1:nth-child(4) {
     margin: 10px 0 0 0;
-    width: 230px;
-    animation: type 3s steps(40,end) 5s forwards;
+    width: 290px;
+    opacity: 0;
+    animation: type3 3s steps(40,end) 8s forwards;
   }
   .introduction-container h1:nth-child(5) {
     margin: 10px 0 0 0;
-    width: 235px;
-    animation: type 3s steps(40,end) 6s forwards;
+    width: 299px;
+    opacity: 0;
+    animation: type3 3s steps(40,end) 11s forwards;
   }
+
+
+  
+/* .typing-demo {
+  width: 20ch;
+ 
+  height: 50vh;
+  animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+.typing-demo1{
+  width: 60ch;
+  animation: typing 5s steps(60) 3s, blink .10s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: auto;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+} */
+
+/* @keyframes typing {
+  from {
+    width: 0
+  }
+} */
+    
+/* @keyframes blink {
+  50% {
+    border-color: transparent
+  }
+} */
 
 
 
@@ -132,9 +175,27 @@
       border-right: none;
     }
   }
+
+  @keyframes type3 {
+    0% {
+      width: 0;
+    }
+  
+    1%, 99%{
+      opacity: 1;
+      border-right: 1px solid orange;
+    }
+    100%{
+      opacity: 1;
+      border-right: none;
+    }
+  }
   
   @keyframes blink {
     50% {
       border-color: transparent;
     }
   }
+
+   /* margin: 0 auto auto auto; */
+    /* background: linear-gradient(to right, #f8b195, #f67280, #c06c84); */

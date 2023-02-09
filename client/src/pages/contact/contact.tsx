@@ -5,7 +5,7 @@ import "./contact.css"
 const Contact:React.FC = () => {
 
 
-     // Function will execute on click of button
+    
      const handleDownload = () => {
       // using Java Script method to get PDF file
       fetch('keterPerryCV.pdf').then(response => {
@@ -13,7 +13,7 @@ const Contact:React.FC = () => {
               // Creating new object of PDF file
               const fileURL = window.URL.createObjectURL(blob);
               // Setting various property values
-              let alink = document.createElement('a');
+              const alink = document.createElement('a');
               alink.href = fileURL;
               alink.download = 'keterPerryCV.pdf';
               alink.click();

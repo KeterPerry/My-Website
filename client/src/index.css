@@ -15,7 +15,6 @@ code {
 
 html {
   font-size: 62.5%;
-  /* font-family: "Poppins", sans-serif; */
  
 }
 
@@ -23,9 +22,4 @@ html {
   height:100%;
 }
 
-/* 
-@font-face {
-  font-family: "wonderland";
-  src: local("wonderland"),
-      url("./assets/fonts/wonderland.ttf") format("truetype");
-} */
+

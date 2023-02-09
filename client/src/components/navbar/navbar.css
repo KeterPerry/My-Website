@@ -9,12 +9,13 @@
 .navbar{
     width: 15vw;
     height: 100vh;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.182);
     display: flex;
     flex-direction: column;
     gap:10rem;
     position:sticky;
     transition: all 0.5s;
+    opacity: 0.2;
       /* margin: auto; */
 
 }

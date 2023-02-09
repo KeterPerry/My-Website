@@ -11,7 +11,7 @@ const About:React.FC = () => {
     <div className="section-2">
     <div className="left-about">
       <h1>Hi,</h1>
-      <p>My name is Keter Perry and I'm a Full Stack programmer,
+      <p>My name is Keter Perry and I&apos;m a Full Stack programmer,
         I like to program, design and in my free time read dictionaries and astrophysics news.
         on this site, you can find several projects I have generated and my contact info.
         Feel free to reach out at any time.

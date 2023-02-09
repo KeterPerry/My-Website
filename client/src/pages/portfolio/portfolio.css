@@ -1,9 +1,26 @@
-.home{
-    width: 85vw;
+.portfolio-container{
+    width: 100%;
     height:100vh;
+    background-image: linear-gradient( rgba(139, 139, 117, 0.573), rgba(139, 139, 117, 0.573), rgba(205, 205, 192, 0.573));
+    /* background-color: rgba(138, 138, 109, 0.825); */
     /* background-image: url("https://shopify-customerio.s3.amazonaws.com/tools/image_attachment/image/custom_resized_3d25791d-f9e9-407c-b873-7130a1a01478.jpg"); */
-    background-image: url("https://shopify-customerio.s3.amazonaws.com/tools/image_attachment/image/custom_resized_33cd783d-14c3-455b-a2e4-993d4f3fa90d.jpg");
+    /* background-image: url("https://shopify-customerio.s3.amazonaws.com/tools/image_attachment/image/custom_resized_33cd783d-14c3-455b-a2e4-993d4f3fa90d.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+   
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+  
+}
+
+.projects-wrapper{
+    width:max-content;
+    margin-left: 30rem;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
