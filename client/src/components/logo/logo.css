@@ -1,0 +1,23 @@
+
+    /* @font-face {
+        font-family: 'Void Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Void Regular'), url('Void.woff') format('woff');
+
+    } */
+
+    .logo{
+      
+        background-color:white; 
+        opacity: 0.8;  
+        width:100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        height:6rem;
+    }
+
+    .logo img{
+        margin-top: 2rem;
+        width: 11rem;
+    }

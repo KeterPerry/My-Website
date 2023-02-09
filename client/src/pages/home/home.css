@@ -1,0 +1,140 @@
+.home{
+    width: 100%;
+    height:100vh;
+    background-image: url("https://shopify-customerio.s3.amazonaws.com/tools/image_attachment/image/custom_resized_33cd783d-14c3-455b-a2e4-993d4f3fa90d.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* margin-left: 5rem; */
+}
+.home::after{
+    position: absolute;
+    content: "";
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.704);
+    opacity: 0.5;
+    /* z-index: -1; */
+}
+.home::before{
+    position: absolute;
+    content: "I design and develop experiences that make people's lives simple";
+    font-size: 3rem;
+    padding: 100px 0 20px 0;
+    padding-left: 21px;
+    width: 230px;
+    height: 418px;
+    rotate: -12.5deg;
+    background-color: white;
+    top: 12rem;
+    left: 56rem;
+    opacity: 0.8;
+    animation: type 10s steps(40,end) forwards;
+}
+
+.introduction-container{
+    width:max-content;
+    height:max-content;
+    padding-left: 25rem;
+    padding-top: 20rem;
+    z-index: 1;
+   
+
+}
+
+.introduction-container h1{
+    
+    
+        color: black;
+        color: rgb(96, 85, 24);
+        font-family: 'Fira Code', monospace;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+}
+
+.introduction-container h1:nth-child(1) {
+    margin: 0 20 0 0;
+    width: 170px;
+    animation: type 2s steps(40,end) forwards;
+  }
+
+  .introduction-container h1:nth-child(2) {
+    opacity: 0.8;
+    font-family: "Work Sans", sans-serif;
+    /* margin: 0 auto auto auto; */
+    background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
+    font-weight: 800;
+    font-size: 60px;  
+    width: max-content;
+    padding-left:2rem;
+    padding-right:2rem;
+    overflow: hidden;
+    animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+    z-index: 3;
+  }
+
+  .introduction-container h1:nth-child(3) {
+    margin: 10px 0 0 0;
+    width: 220px;
+    animation: type 3s steps(40,end) 4s forwards;
+  }
+  .introduction-container h1:nth-child(4) {
+    margin: 10px 0 0 0;
+    width: 230px;
+    animation: type 3s steps(40,end) 5s forwards;
+  }
+  .introduction-container h1:nth-child(5) {
+    margin: 10px 0 0 0;
+    width: 235px;
+    animation: type 3s steps(40,end) 6s forwards;
+  }
+
+
+
+  
+@keyframes shring-animation {
+    0% {
+      background-position: 0 0;
+      opacity: 0;
+      width: 0;
+    }
+    1% {
+      background-position: 0 0;
+      opacity: 1;
+      border-right: 1px solid orange;
+    }
+    50% {
+      background-position: 150px 0;
+      opacity: 1;
+      border-right: 1px solid orange;
+    }
+    100% {
+      background-position: 400px 0;
+      opacity: 1;
+      border-right: 1px solid orange;
+    }
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    1%, 99%{
+      border-right: 1px solid orange;
+    }
+    100%{
+      border-right: none;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
