@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="footer">
         <div>Designed and Developed by Keter Perry</div>
         <div className="copy-right-container">
-        <span>KeterPery</span>
+        <div className="keter">KeterPery</div>
         <BiCopyright className="copy-right"/>
         </div>
         

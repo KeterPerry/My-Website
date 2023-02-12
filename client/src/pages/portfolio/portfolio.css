@@ -24,3 +24,8 @@
 ::-webkit-scrollbar{
     display: none;
 }
+
+@media(max-width:768px){
+    .projects-wrapper
+    {   margin-left: 8rem;}
+}

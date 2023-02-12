@@ -20,7 +20,10 @@ const ProjectCard: React.FC<Props> =({project}:Props) => {
     </div>
     </div >
     <div className="card-body-bottom">
-         <button className="card-btn" > <FiGithub style={{paddingTop:"0.5px", fontSize:"20px"}}/>Check Github</button>
+     
+  
+         <button className="card-btn" ><FiGithub style={{paddingTop:"6px", fontSize:"20px", width:"30px", height:"21px"}}/><a href={project.code_source} style={{textDecoration:"none", color:"black"}}>Check Github</a></button>
+        
          </div>
   </div>
 

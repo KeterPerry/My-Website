@@ -17,19 +17,29 @@
     top:0;
     left: 0;
 border-style: solid;
-border-width: 662px 1250px 0 0;
+border-width: 570px 1350px 0 0;
 
 border-color: rgba(161, 161, 105, 0.825) transparent transparent transparent;
 z-index: -1;
 }
 
+.Contact-info-wrapper{
+    width:max-content;
+    height: max-content;
+    padding-top: 8rem;
+    display:flex;
+    flex-direction: column;
+    padding-left: 15vw ;
+    gap:3rem;
+}
+
 .contact-info{
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
     display: flex;
     flex-direction: column;
     gap:2rem;
     font-size:2rem;
-    padding-left: 18vw ;
+   
 
 } 
 .download-btn{
@@ -44,7 +54,23 @@ z-index: -1;
    background-color:rgba(183, 160, 34, 0.786);
    background-color:rgba(255, 217, 0, 0.362);
 }
-.cv-upload{
+/* .cv-upload{
   padding-top:10rem;
   padding-left: 20vw ;
+} */
+
+@media(max-width: 805px)
+{
+    .contact-info{
+        font-size:1.2rem;
+    }
+
+    .Contact-info-wrapper{
+        padding-top:5rem;
+        padding-left: 7vw ;
+    }
+
+    .Contact-container::after{
+        border-width: 650px 500px 0 0;
+    }
 }

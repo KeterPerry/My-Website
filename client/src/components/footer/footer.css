@@ -12,11 +12,11 @@
 
 }
 .footer div{
-/* width:33%; */
+
 color: #a0a0a0;
 
-
 }
+
 .footer-icons-wrapper{
    
     cursor: pointer;
@@ -37,4 +37,21 @@ color: #a0a0a0;
     display:flex;
     gap: 1.5rem;
 width:max-content;
+}
+
+@media(max-width:768px){
+    .footer{
+        padding-left: 3rem;
+        gap:3rem;
+        font-size: 1rem;
+        justify-content:flex-start
+    }
+
+    .copy-right-container{
+        gap:1rem;
+    }
+
+    .keter{
+        padding-top: 0.5rem;
+        }
 }

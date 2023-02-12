@@ -2,8 +2,7 @@
     border:5px solid;
     border-color: var(--secondary-color);
     width:70rem;
-    height:28rem;
-   
+    height:28rem;   
     opacity: 0.8;
     background-color: white;
     font-weight: bold;
@@ -48,19 +47,41 @@ gap: 1rem;
 .card-btn{
 width: max-content;
 padding-left: 0.5rem;
-padding-right: 0.5rem;
+padding-right: 0.8rem;
 padding-top: 0.5rem;
-padding-bottom: 0.5rem;
+padding-bottom: 0.8rem;
 width: 15rem;
-margin-top: 1.2rem;
-margin-left: 1.5rem;
+margin-top: 1rem;
+margin-left: 0rem;
 font-family:'Courier New', Courier, monospace;
 border: 1px solid;
 border-radius:1%;
+font-size: 17px;
+width: max-content;
 }
 
 .card-btn:hover{
     background-color: var(--secondary-color);
 
     
+}
+
+@media(max-width:768px){
+
+    .card-cont{
+        border:5px solid;
+        border-color: var(--secondary-color);
+        width:28rem;
+        height:55rem;  }
+    .card-body-top{
+        height: 87%;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        background-color: rgb(203, 198, 179);
+        padding: 1.5rem;
+    }
+    .card-body-bottom{
+        padding-top: 0.5rem;
+    }
 }

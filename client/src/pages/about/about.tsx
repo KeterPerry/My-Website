@@ -13,8 +13,8 @@ const About:React.FC = () => {
       <h1>Hi,</h1>
       <p>My name is Keter Perry and I&apos;m a Full Stack programmer,
         I like to program, design and in my free time read dictionaries and astrophysics news.
-        on this site, you can find several projects I have generated and my contact info.
-        Feel free to reach out at any time.
+        Here, you will find several projects I have made and my contact info as well.
+        Feel free to reach out at any time :&#41;
       </p>
     </div>
     <div className="right-about">

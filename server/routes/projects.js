@@ -7,10 +7,15 @@ export { router };
 router.post("/adding", function (req, res, next) {
   let newProject = req.body;
   const query =
-    "insert into projects (name, image, description) values (?,?,?)";
+    "insert into projects (name, image, description, code_source) values (?,?,?,?)";
   dbConnection.query(
     query,
-    [newProject.name, newProject.image, newProject.description],
+    [
+      newProject.name,
+      newProject.image,
+      newProject.description,
+      newProject.codeSource,
+    ],
     (err, result) => {
       if (!err) {
         return res.status(200).json({ message: "was added succsessfully" });
@@ -34,10 +39,11 @@ router.get("/getall", function (req, res, next) {
 router.patch("/update/:id", function (req, res, next) {
   const id = req.params.id;
   const project = req.body;
-  const query = "update projects set name=?, image=?, description=? where id=?";
+  const query =
+    "update projects set name=?, image=?, description=?, code_source=? where id=?";
   dbConnection.query(
     query,
-    [project.name, project.image, project.description, id],
+    [project.name, project.image, project.description, project.codeSource, id],
     (err, result) => {
       if (!err) {
         if (result.affectedRows == 0) {
